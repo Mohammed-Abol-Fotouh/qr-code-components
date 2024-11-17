@@ -1,52 +1,64 @@
+: root {
+	--white: hsl(0, 0%, 100%);
+	--Slate-300: hsl(212, 45%, 89%);
+	--Slate-500: hsl(216, 15%, 48%);
+	--Slate-900: hsl(218, 44%, 22%);
+	--font-size: 15px;
+	--font-weight-light: 400;
+	--font-weight-bold: 700;
+}
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
 body {
-  font-family: "Outfit", sans-serif;
+	font-family: "Outfit", sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--Slate-300);
 }
-main {
-  height: 100vh;
-  background-color: hsl(212, 45%, 89%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+
+.main-section {
+	width: 320px;
+	height: 499px;
+	background-color: var(--white);
+	padding: 16px;
+	border-radius: 10px;
+	text-align: center;
 }
-main section.container {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 1em;
-  width: 25em;
-  padding: 1em;
-  text-align: center;
+
+.main__img {
+	max-width: 100%;
+	border-radius: 10px;
 }
-@media (max-width: 375px) {
-  main section.container {
-    width: 20em;
-  }
+
+.main__content {
+	margin: 0 16px;
 }
-main section.container img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 1em;
+
+.main__content--heading {
+	color: var(--Slate-900);
+	font-size: 22px;
+	margin: 16px 0;
 }
-main section.container h1 {
-  font-weight: 600;
-  margin: 2rem;
-  color: hsl(218, 44%, 22%);
+
+.main__content--description {
+	color: var(--Slate-500);
+	font-size: 15px;
+	line-height: 1.4;
 }
-main section.container p {
-  font-size: 1em;
-  color: hsl(220, 15%, 55%);
-  margin: 1em;
-  line-height: 1.6;
-}
+
 .attribution {
-  font-size: 0.75rem;
-  text-align: center;
+	font-size: 11px;
+	text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
 }
