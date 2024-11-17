@@ -1,8 +1,8 @@
 : root {
-	--white: hsl(0, 0%, 100%);
-	--Slate-300: hsl(212, 45%, 89%);
-	--Slate-500: hsl(216, 15%, 48%);
-	--Slate-900: hsl(218, 44%, 22%);
+	--white: RGB(225, 255, 255);
+	--Slate-300: RGB(213, 225, 239);
+	--Slate-500: RGB(104, 119, 141);
+	--Slate-900: RGB(31, 49, 79);
 	--font-size: 15px;
 	--font-weight-light: 400;
 	--font-weight-bold: 700;
